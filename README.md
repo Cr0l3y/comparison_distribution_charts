@@ -26,6 +26,17 @@ A bar chart was generated using the Matplotlib and Seaborn libraries, customizin
 General Summary part 1: we used column and bar charts, processed and previously selected the data of interest to build a visualization, customized the title, axes, labels and color palette.
 
 
+**Data Grouping**
+
+Stacked charts will now be introduced, with bars and columns, and another categorical variable, "region", will be added, because we want to divide the value passed by the column into categories. We sometimes have the northeast region with the year 2019 in the year column, however, with different values ​​for each of the sales, so we will need to aggregate the data. Instead of using groupby(), "Cross Table" will be used. A cross table basically aggregates values ​​that are related to each other. So, we want to relate two different types of columns, taking the values ​​from the columns.
+After creating a stacked chart with the "stacked" function, its formatting was done by resetting the Xlabel and Ylabel axes, and changing the parameters such as its size, color and resolution. Now the years in our chart are in the horizontal format of the chart and no longer in the vertical format, which improves the visualization. Then remove the ticks from the x and y axes, to ensure their removal.
+
+    General Summary Part 2: Stacked column charts were created, which are useful for comparing sales data by year and region. From a copy of the sales data, where we selected the columns of interest: order_date, sales and region.
+    We removed the order_date column, keeping only the relevant information. We used cross tables to aggregate sales by year and region and generated the stacked column chart.
+
+
+
+
 
 ---
 ---
@@ -50,4 +61,14 @@ Foi gerado um gráfico de barras utilizando as bibliotecas Matplotlib e Seaborn,
 
 
     Resumo Geral parte 1: usamos o gráficos de colunas e barras, fizemos o tratamento e selecionar previamente os dados de interesse para a construção de uma visualização, personalizamos título, eixos, rótulos e paleta de cores.
+
+
+**Agrupamento de dados**
+
+Vai ser introduzido agora graficos impilhados, sendo de barras e de colunas, e adicionar mais uma variavel categorica "regiao", por que quermos dividir em categorias o valor que é passado pela coluna. Temos a região nordeste algumas vezes com o ano de 2019 na coluna ano, porém, com valores diferentes para cada uma das vendas, então precisaremos fazer a agregação dos dados. Ao inves de usar o groupby(), vai ser utilizado "Cross Table" uma tabela cruzada basicamente faz a agregação de valores que tenham relação entre si. Então, queremos relacionar dois tipos diferentes de colunas, pegando os valores das colunas.
+Após fazer um grafico empilhado com a função "stacked" foi feito sua formatação resetando os euxos Xlabel e Ylabel, e mudando os parametros como seu tamanho, cor e sua hotação agora os anos do nosso grafico estão no formato horizontal do grafico e nao mais na forma vertical, que melhora na hora de visualizar-mos. Em seguida removido os tickes dos eixos x e y, para que seja feito a garantia do seu remoção.
+
+    Resumo Geral parte 2: Foi criado gráficos de colunas empilhadas, que são úteis para comparar dados de vendas por ano e região. A partir de uma cópia dos dados de vendas, onde selecionamos as colunas de interesse: data_pedido, vendas e regiao.
+    Removemos a coluna data_pedido, mantendo apenas as informações relevantes. Utilizamos tabelas cruzadas (cross tables) para agregar as vendas por ano e região e geramos o gráfico de colunas empilhadas.
+
 
