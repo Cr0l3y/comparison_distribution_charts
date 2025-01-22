@@ -76,9 +76,9 @@ Após fazer um grafico empilhado com a função "stacked" foi feito sua formata�
 Estilizando o grafico de colunas ordernamos os nomes da regioes com o do grafico, criamos um laço for que chamaremos de container, adicionamos valores dentro do grafico passando uma f-string e colocando um separador com o codigo: labels = [f'R$ {valor.get_height():,.0f}'.replace(",",".")]. e foi modificado cor das informações, seu peso, tamanho e posicionamento. depois foi inserido uma linha para representar os 87% do nosso grafico com "ax.axvline" e passando seus respectivos valores.
 
 
-
-
-
+---
+---
+# ***Analise 2***
 
 
 
